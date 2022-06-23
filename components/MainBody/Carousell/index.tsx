@@ -15,23 +15,14 @@ const storyObj = [
   },
   {
     content: () => <Story imageUrl={"/eminem.webp"} />,
-    seeMore: ({ close }) => {
-      return <SeeMore close={close} />;
-    },
   },
   {
     content: () => <Story imageUrl={"/wade.webp"} />,
-    seeMore: ({ close }) => {
-      return <SeeMore close={close} />;
-    },
   },
   {
     content: ({ action, isPaused }) => (
       <AdCompontent action={action} isPaused={isPaused} />
     ),
-    seeMore: ({ i, close }) => {
-      return <SeeMore close={close} />;
-    },
   },
   {
     url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
@@ -50,9 +41,8 @@ const index = () => {
     <div className="rounded-lg overflow-hidden">
       <Stories
         stories={storyObj}
-        currentIndex={storyObj.length + 1}
         storyStyles={storyStyles}
-        keyboardNavigation
+        preventDefault={false}
       />
     </div>
   );

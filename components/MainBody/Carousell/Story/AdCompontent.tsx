@@ -24,7 +24,7 @@ const AdCompontent = ({ action, isPaused }) => {
         <p>This inventory can be used for Interstitial and Video ads</p>
       </div>
       <div className=" mt-5 h-[300px] w-[300px] relative">
-        <Image src={"/amazonAd.jpg"} layout="fill" objectFit="fill" />
+        <Image src={"/amazonAd.jpg"} alt="ad" layout="fill" objectFit="fill" />
       </div>
       <p>HotNewHipHop.com</p>
     </div>
