@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SeeMore = ({ close }) => {
+const SeeMore = ({ close }: any) => {
   return (
     <div className="w-full h-full bg-blue-50">
       <h1 onClick={close} className="text-black">

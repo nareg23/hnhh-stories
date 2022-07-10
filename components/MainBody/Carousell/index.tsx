@@ -2,14 +2,14 @@ import React from "react";
 import Stories from "react-insta-stories";
 import { useRouter } from "next/router";
 // import { storyObj } from "../../../data/stories";
-import SeeMore from "./stories/SeeMore";
+import SeeMore from "./Story/SeeMore";
 import Story from "./Story";
 import AdCompontent from "./Story/AdCompontent";
 
 const storyObj = [
   {
     content: () => <Story imageUrl={"/ciara.webp"} />,
-    seeMore: ({ close }) => {
+    seeMore: ({ close }: any) => {
       return <SeeMore close={close} />;
     },
   },
@@ -20,7 +20,7 @@ const storyObj = [
     content: () => <Story imageUrl={"/wade.webp"} />,
   },
   {
-    content: ({ action, isPaused }) => (
+    content: ({ action, isPaused }: any) => (
       <AdCompontent action={action} isPaused={isPaused} />
     ),
   },

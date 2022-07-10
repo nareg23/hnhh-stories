@@ -9,7 +9,6 @@ export default function Home() {
         <Header />
         {/* main-Content */}
         <MainBody />
-        {/* footer */}
       </div>
     </div>
   );

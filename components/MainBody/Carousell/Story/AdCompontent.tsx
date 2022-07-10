@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useEffect } from "react";
 
-const AdCompontent = ({ action, isPaused }) => {
+const AdCompontent = ({ action, isPaused }: any) => {
   useEffect(() => {
     setTimeout(() => {
       action("pause");
