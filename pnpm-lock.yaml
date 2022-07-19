@@ -8,6 +8,7 @@ specifiers:
   autoprefixer: ^10.4.7
   eslint: 8.18.0
   eslint-config-next: 12.1.6
+  keen-slider: ^6.7.0
   next: 12.1.6
   postcss: ^8.4.14
   react: 18.2.0
@@ -18,6 +19,7 @@ specifiers:
 
 dependencies:
   '@heroicons/react': 1.0.6_react@18.2.0
+  keen-slider: 6.7.0
   next: 12.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1379,6 +1381,10 @@ packages:
       array-includes: 3.1.5
       object.assign: 4.1.2
     dev: true
+
+  /keen-slider/6.7.0:
+    resolution: {integrity: sha512-tsxUE2PXCRQZcZsLmFY5S4UK0yStQd9Dw/qnH57RyXDTUr3XMDhoAOkPbOQT68lGNSpghBcEftPfcgggYoHFTA==}
+    dev: false
 
   /language-subtag-registry/0.3.21:
     resolution: {integrity: sha512-L0IqwlIXjilBVVYKFT37X9Ih11Um5NEl9cbJIuU/SwP/zEEAbBPOnEeeuxVMf45ydWQRDQN3Nqc96OgbH1K+Pg==}
