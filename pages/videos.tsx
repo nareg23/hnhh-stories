@@ -3,6 +3,7 @@ import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { WheelControls } from "../utills/keenSliderPlugin";
 import Video from "../components/MainBody/Video";
+
 const Videos = () => {
   const [refCallback] = useKeenSlider(
     {
@@ -22,12 +23,21 @@ const Videos = () => {
         artistImg={"/kanye.webp"}
         artistName={"Eminem"}
         imageSource={"/eminem.webp"}
+        likes={144}
       />
       <Video
         artistImg={"/kanye.webp"}
         artistName={"wade"}
         classes={"keen-slider__slide "}
         imageSource={"/wade.webp"}
+        likes={110}
+      />
+      <Video
+        artistImg={"/kanye.webp"}
+        artistName={"wade"}
+        classes={"keen-slider__slide "}
+        imageSource={"/wade.webp"}
+        likes={346}
       />
     </div>
   );

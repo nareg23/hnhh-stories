@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import Image from "next/image";
 import classNames from "classnames";
 
@@ -11,13 +11,15 @@ type PropsTypes = {
   classes: string;
   artistImg: string;
   artistName: string;
+  likes: number;
 };
 
-const index: FC<PropsTypes> = ({
+const Index: FC<PropsTypes> = ({
   imageSource,
   classes,
   artistImg,
   artistName,
+  likes,
 }) => {
   return (
     <div className={classNames("h-full", "w-full", classes)}>
@@ -26,7 +28,7 @@ const index: FC<PropsTypes> = ({
         <div className="absolute h-10 w-20 opacity-50  top-4 left-5">
           <Image src={"/logo.png"} alt={""} layout={"fill"} objectFit="fill" />
         </div>
-        <RightPanel />
+        <RightPanel likes={likes} />
         <MidPanel artistImg={artistImg} artistName={artistName} />
       </div>
       <div className="h-1/6">
@@ -36,4 +38,4 @@ const index: FC<PropsTypes> = ({
   );
 };
 
-export default index;
+export default Index;

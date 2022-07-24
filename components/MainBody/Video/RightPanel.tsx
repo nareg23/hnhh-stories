@@ -1,6 +1,6 @@
 import React from "react";
 import { HeartIcon, ChatAltIcon, ShareIcon } from "@heroicons/react/solid";
-const RightPanel = () => {
+const RightPanel = ({ likes }) => {
   return (
     <div
       className="absolute right-3 bottom-60
@@ -10,7 +10,7 @@ const RightPanel = () => {
     >
       <div className="text-center">
         <HeartIcon className="text-white font-semibold" />
-        <p className="text-gray-300">118k</p>
+        <p className="text-gray-300">{likes}</p>
       </div>
       <div className="text-center">
         <ChatAltIcon className="text-white" />
