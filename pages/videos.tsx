@@ -2,6 +2,7 @@ import React from "react";
 import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { WheelControls } from "../utills/keenSliderPlugin";
+import Video from "../components/MainBody/Video";
 const Videos = () => {
   const [refCallback] = useKeenSlider(
     {
@@ -12,13 +13,22 @@ const Videos = () => {
     [WheelControls]
   );
   return (
-    <div ref={refCallback} className=" keen-slider h-screen bg-black ">
-      <div className=" keen-slider__slide bg-white">1</div>
-      <div className="keen-slider__slide bg-gray-800">2</div>
-      <div className="keen-slider__slide bg-orange-800">2</div>
-      <div className="keen-slider__slide bg-gray-300">2</div>
-      <div className="keen-slider__slide bg-gray-300">2</div>
-      <div className="keen-slider__slide bg-gray-300">2</div>
+    <div
+      ref={refCallback}
+      className=" keen-slider lg:max-h-96 h-screen bg-black"
+    >
+      <Video
+        classes="keen-slider__slide"
+        artistImg={"/kanye.webp"}
+        artistName={"Eminem"}
+        imageSource={"/eminem.webp"}
+      />
+      <Video
+        artistImg={"/kanye.webp"}
+        artistName={"wade"}
+        classes={"keen-slider__slide "}
+        imageSource={"/wade.webp"}
+      />
     </div>
   );
 };
