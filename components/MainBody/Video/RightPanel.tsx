@@ -10,7 +10,7 @@ const RightPanel = ({ likes }) => {
     >
       <div className="text-center">
         <HeartIcon className="text-white font-semibold" />
-        <p className="text-gray-300">{likes}</p>
+        <p className="text-gray-300">{likes}k</p>
       </div>
       <div className="text-center">
         <ChatAltIcon className="text-white" />

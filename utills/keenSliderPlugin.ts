@@ -27,14 +27,17 @@ export const WheelControls: KeenSliderPlugin = (slider) => {
       y: e.pageY,
     };
     dispatch(e, "ksDragStart");
+    console.log("wheelstart");
   }
 
   function wheel(e: WheelEvent) {
     dispatch(e, "ksDrag");
+    console.log("wheel");
   }
 
   function wheelEnd(e: WheelEvent) {
     dispatch(e, "ksDragEnd");
+    console.log("wheelend");
   }
 
   function eventWheel(e: WheelEvent) {
@@ -49,6 +52,7 @@ export const WheelControls: KeenSliderPlugin = (slider) => {
       wheelActive = false;
       wheelEnd(e);
     }, 50);
+    console.log("eventWheel");
   }
 
   slider.on("created", () => {
