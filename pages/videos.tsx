@@ -7,7 +7,6 @@ import Video from "../components/MainBody/Video";
 const sliderControls: KeenSliderPlugin = (slider) => {
   slider.on("animationEnded", () => {
     console.log("aniamations eneded");
-    // console.log(slider);
     slider.update();
   });
 };
@@ -55,16 +54,6 @@ const Videos = () => {
         imageSource={"/wade.webp"}
         likes={346}
         type="img"
-      />
-      <Video
-        artistImg={"/kanye.webp"}
-        artistName={"wade"}
-        classes={"keen-slider__slide"}
-        imageSource={
-          "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-        }
-        likes={346}
-        type="video"
       />
     </div>
   );

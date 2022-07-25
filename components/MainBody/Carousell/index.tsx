@@ -31,18 +31,13 @@ const storyObj = [
 ];
 
 const index = () => {
-  const storyStyles = {
-    width: "100%",
-    height: "100%",
-    margin: "auto",
-  };
-
   return (
-    <div className="rounded-lg overflow-hidden">
+    <div className="rounded-lg h-full w-full ">
       <Stories
         stories={storyObj}
-        storyStyles={storyStyles}
         preventDefault={false}
+        height={"100%"}
+        width={"100%"}
       />
     </div>
   );

@@ -8,7 +8,7 @@ type Props = {
 
 const Story: FC<Props> = ({ imageUrl }) => {
   return (
-    <div className="w-full h-full  border-white">
+    <div className=" nareg w-full h-full">
       <div className="w-full h-full relative">
         <Image src={imageUrl} alt="image" layout="fill" objectFit="cover" />
       </div>

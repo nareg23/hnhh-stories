@@ -27,6 +27,9 @@ const AdCompontent = ({ action, isPaused }: any) => {
         <Image src={"/amazonAd.jpg"} alt="ad" layout="fill" objectFit="fill" />
       </div>
       <p>HotNewHipHop.com</p>
+      <p className="font-semibold text-white text-lg">
+        Tab and Hold to pause the slide
+      </p>
     </div>
   );
 };

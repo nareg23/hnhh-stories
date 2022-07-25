@@ -68,6 +68,9 @@ const Main = () => {
               src={"/ciara.webp"}
             ></Image>
           </div>
+          <span className="absolute text-sm font-extralight text-gray-500">
+            Tik Tok
+          </span>
         </div>
         <div className="h-full w-1/2 flex justify-start items-center ">
           <div className="flex flex-col items-start justify-between h-24 w-1/4  overflow-hidden">

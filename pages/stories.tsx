@@ -3,7 +3,7 @@ import Carousell from "../components/MainBody/Carousell";
 
 const stories = () => {
   return (
-    <div>
+    <div className="h-screen w-screen">
       <Carousell />
     </div>
   );
